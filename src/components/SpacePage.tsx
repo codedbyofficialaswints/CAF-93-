@@ -15,27 +15,27 @@ export default function SpacePage({ currentLang }: SpacePageProps) {
   // Curated spatial photography gallery showing the flagship interior design
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
+      src: "/src/assets/images/interior_ambient_lighting_1783205187412.jpg",
       caption: { en: "The warm 2700K ambient ceiling lighting", ar: "إضاءة الأسقف الدافئة طيف ٢٧٠٠ك" }
     },
     {
-      src: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&q=80&w=800",
+      src: "/src/assets/images/interior_walnut_chairs_1783205200652.jpg",
       caption: { en: "Our signature walnut cane-back armchairs", ar: "كراسي خشب الجوز وقش الخيزران الفريدة" }
     },
     {
-      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+      src: "/src/assets/images/interior_biophilic_olive_1783205214995.jpg",
       caption: { en: "The peaceful biophilic workspace zones", ar: "مساحات العمل الطبيعية المهدئة للتوتر" }
     },
     {
-      src: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&q=80&w=800",
+      src: "/src/assets/images/interior_barista_station_1783205228170.jpg",
       caption: { en: "Barista station and unglazed stoneware cups", ar: "منصة باريستا كافيه ٩٣ وأكواب السيراميك" }
     },
     {
-      src: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=800",
-      caption: { en: "Our central olive tree nature connection", ar: "شجرة الزيتون في قلب صالة كافيه ٩٣" }
+      src: "/src/assets/images/branding_mockup_1783203298263.jpg",
+      caption: { en: "Our bespoke brand identity and styling", ar: "الهوية البصرية وتفاصيل كافيه ٩٣ الفريدة" }
     },
     {
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+      src: "/src/assets/images/interior_study_zone_1783205242042.jpg",
       caption: { en: "Fully integrated desks with power points", ar: "طاولات متكاملة بمقابس طاقة مدمجة" }
     }
   ];
@@ -50,16 +50,16 @@ export default function SpacePage({ currentLang }: SpacePageProps) {
   ];
 
   return (
-    <div className="py-24 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
+    <div className="pt-28 pb-20 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
       <div className="bg-pattern" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-gold font-display text-lg tracking-widest block mb-2 italic">
+          <span className="text-gold font-posterama-regular text-lg tracking-widest block mb-2">
             {currentLang === 'en' ? "OUR SPATIAL CONCEPT" : "فلسفة التصميم الداخلي"}
           </span>
-          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display italic'}`}>
+          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
             {t('spaceTitle')}
           </h1>
           <p className="text-cream/80 text-sm sm:text-base">
@@ -122,6 +122,7 @@ export default function SpacePage({ currentLang }: SpacePageProps) {
                   src={img.src} 
                   alt={img.caption[currentLang]} 
                   className="w-full object-cover rounded-2xl group-hover:scale-103 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
                 />
                 
                 {/* Overlay hover element */}

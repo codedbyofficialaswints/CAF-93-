@@ -89,7 +89,7 @@ export default function App() {
       />
 
       {/* 2. Main content switch-router */}
-      <main className="flex-grow pt-16">
+      <main className="flex-grow">
         {activeTab === 'home' && (
           <div className="animate-fade-in">
             <Hero 

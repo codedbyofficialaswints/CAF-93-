@@ -95,11 +95,10 @@ export default function Hero({ currentLang, onNavigate }: HeroProps) {
 
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-normal tracking-tight leading-[1.1] mb-6">
-              <span className="block font-display text-white mb-2 italic">
-                {currentLang === 'en' ? "CAFÉ 93" : "كافيه ٩٣"}
-                <span className="text-gold font-sans not-italic">°</span>
+              <span className="block font-display font-semibold text-white mb-2 tracking-wide">
+                {currentLang === 'en' ? "CΛFÉ 93°" : "كافيه ٩٣°"}
               </span>
-              <span className={`block ${currentLang === 'ar' ? 'arabic text-gold text-5xl sm:text-6xl' : 'font-display italic text-gold'}`}>
+              <span className={`block ${currentLang === 'ar' ? 'arabic text-gold text-5xl sm:text-6xl' : 'font-posterama-regular text-gold'}`}>
                 {t('heroTitle')}
               </span>
             </h1>
@@ -269,14 +268,14 @@ export default function Hero({ currentLang, onNavigate }: HeroProps) {
                       x="100" 
                       y="155" 
                       textAnchor="middle" 
-                      fontFamily="Fraunces, Georgia, serif" 
-                      fontWeight="bold" 
+                      fontFamily='"Posterama Semibold", "Posterama", "Outfit", sans-serif' 
+                      fontWeight="600" 
                       fontSize="14" 
                       fill="#6B4226" 
                       letterSpacing="2"
                       opacity="0.85"
                     >
-                      CAFÉ 93°
+                      CΛFÉ 93°
                     </text>
                     <text 
                       x="100" 

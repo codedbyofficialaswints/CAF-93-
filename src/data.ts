@@ -2,7 +2,7 @@ import { MenuItem, TranslationSet } from './types';
 
 export const TRANSLATIONS: TranslationSet = {
   // Navigation
-  brandName: { en: "CAFÉ 93°", ar: "كافيه ٩٣°" },
+  brandName: { en: "CΛFÉ 93°", ar: "كافيه ٩٣°" },
   tagline: { en: "The Elixir of Happiness", ar: "إكسير السعادة" },
   navHome: { en: "Home", ar: "الرئيسية" },
   navMenu: { en: "Menu", ar: "القائمة" },

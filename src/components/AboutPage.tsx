@@ -11,16 +11,16 @@ export default function AboutPage({ currentLang }: AboutPageProps) {
   const t = (key: string) => TRANSLATIONS[key]?.[currentLang] || key;
 
   return (
-    <div className="py-24 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
+    <div className="pt-28 pb-20 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
       <div className="bg-pattern" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-gold font-display text-lg tracking-widest block mb-2 italic">
+          <span className="text-gold font-posterama-regular text-lg tracking-widest block mb-2">
             {currentLang === 'en' ? "OUR BRAND DNA" : "قصتنا وأصالتنا"}
           </span>
-          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display italic'}`}>
+          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
             {t('storyTitle')}
           </h1>
           <p className="text-cream/80 text-sm sm:text-base">
@@ -70,6 +70,47 @@ export default function AboutPage({ currentLang }: AboutPageProps) {
                   : "أول درايف ثرو وملاذ حرفي في ولاية بركاء، مُهندّس لصفاء ذهنك."}
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Brand Mockup & Identity Section */}
+        <div className="mt-24 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-b border-gold/10 py-16">
+          <div className="lg:col-span-7 space-y-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold/15 border border-gold/30 rounded-full text-gold text-xs font-mono">
+              <span>{currentLang === 'en' ? "BRAND IDENTITY MOCKUP" : "نموذج الهوية البصرية الفاخرة"}</span>
+            </div>
+            <h2 className={`text-3xl sm:text-5xl font-normal text-white ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
+              {currentLang === 'en' ? "The Crafted Identity" : "طقوس الهوية البصرية"}
+            </h2>
+            <p className="text-cream/80 text-sm sm:text-base leading-relaxed">
+              {currentLang === 'en'
+                ? "Every touchpoint at CAFÉ 93° is meticulously designed. From our handcrafted ceramic cups with organic stoneware clay dipped in premium wine-red glazes, to our minimalist business cards and signature menus. We embrace the warmth of traditional Omani hospitality, framed by modern, high-precision geometry."
+                : "تم تصميم كل نقطة تواصل في كافيه ٩٣ بعناية فائقة. بدءاً من أكواب السيراميك المصنوعة يدوياً والمصقولة باللون الأحمر الدافئ، وصولاً إلى بطاقات العمل الفاخرة وقائمتنا الجلدية الأنيقة. نجسد كرم الضيافة العمانية التقليدية في إطار هندسي حديث عالي الدقة."}
+            </p>
+            <div className="grid grid-cols-3 gap-4 pt-4 text-center">
+              <div className="border border-gold/10 p-3 bg-wine/20 rounded-lg">
+                <span className="block font-mono text-gold text-sm font-semibold">#4B2E1D</span>
+                <span className="text-[10px] text-cream/60">{currentLang === 'en' ? "Rich Espresso" : "إسبريسو غني"}</span>
+              </div>
+              <div className="border border-gold/10 p-3 bg-wine/20 rounded-lg">
+                <span className="block font-mono text-gold text-sm font-semibold">#D2691E</span>
+                <span className="text-[10px] text-cream/60">{currentLang === 'en' ? "Terracotta" : "تيراكوتا دافئة"}</span>
+              </div>
+              <div className="border border-gold/10 p-3 bg-wine/20 rounded-lg">
+                <span className="block font-mono text-gold text-sm font-semibold">#FDF5E6</span>
+                <span className="text-[10px] text-cream/60">{currentLang === 'en' ? "Warm Ivory" : "عاجي دافئ"}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="lg:col-span-5 relative rounded-2xl overflow-hidden group shadow-2xl border border-gold/20">
+            <img 
+              src="/src/assets/images/branding_mockup_1783203298263.jpg" 
+              alt="Café 93 Brand Identity Mockup" 
+              className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-red/50 via-transparent to-transparent pointer-events-none" />
           </div>
         </div>
 

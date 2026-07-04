@@ -36,10 +36,10 @@ export default function MenuTeaser({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-4">
           <div className="text-center md:text-left rtl:md:text-right max-w-xl">
-            <span className="text-gold font-display text-lg tracking-widest block mb-2 italic">
+            <span className="text-gold font-posterama-regular text-lg tracking-widest block mb-2">
               {currentLang === 'en' ? "HANDCRAFTED DELICACIES" : "مختارات فاخرة للحواس"}
             </span>
-            <h2 className={`text-3xl sm:text-5xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display italic'}`}>
+            <h2 className={`text-3xl sm:text-5xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
               {t('titleMenuTeaser')}
             </h2>
             <p className="text-cream/80 text-sm sm:text-base">
@@ -108,7 +108,7 @@ export default function MenuTeaser({
                   </h3>
 
                   {/* Poetic bilingual voice descriptor */}
-                  <p className="text-cream/90 text-xs italic leading-relaxed mb-6 font-serif">
+                  <p className="text-cream/90 text-xs leading-relaxed mb-6 font-posterama-regular">
                     "{item.poeticDesc?.[currentLang] || item.description[currentLang]}"
                   </p>
                 </div>

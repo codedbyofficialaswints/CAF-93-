@@ -39,12 +39,12 @@ export default function Footer({ currentLang, onNavigate }: FooterProps) {
               onClick={() => onNavigate('home')}
               className="inline-block cursor-pointer"
             >
-              <span className="font-serif text-3xl font-bold text-white tracking-wider">
-                CAFÉ 93<sup className="text-sm font-semibold">°</sup>
+              <span className="font-display text-3xl font-semibold text-white tracking-wider">
+                CΛFÉ 93°
               </span>
               <span className="text-gold font-arabic-display text-xl font-bold ml-2 rtl:mr-2">كافيه ٩٣</span>
             </div>
-            <p className="text-sm text-cream/75 max-w-sm mx-auto lg:mx-0 leading-relaxed font-serif italic">
+            <p className="text-sm text-cream/75 max-w-sm mx-auto lg:mx-0 leading-relaxed font-posterama-regular">
               "{currentLang === 'en' ? "Sensory coffee rituals combined with a curated boutique workspace, designed to elevate focus, creativity, and calm." : "طقوس قهوة حسية ممزوجة بمساحة عمل راقية لتعزيز الإنتاجية والتركيز والاسترخاء."}"
             </p>
             {/* Social linkages */}

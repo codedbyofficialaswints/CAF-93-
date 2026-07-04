@@ -10,8 +10,9 @@
   --color-espresso: #1A1210;
   --color-ivory: #FBF4E8;
 
-  --font-sans: "Inter", "Sora", sans-serif;
-  --font-serif: "Fraunces", serif;
+  --font-sans: "Posterama Semibold", "Posterama", "Outfit", "Inter", sans-serif;
+  --font-serif: "Posterama Semibold", "Posterama", "Outfit", "Fraunces", serif;
+  --font-posterama-regular: "Posterama", "Outfit", "Inter", sans-serif;
   --font-arabic-display: "Noto Kufi Arabic", "Cairo", sans-serif;
   --font-arabic-body: "Cairo", "Tajawal", sans-serif;
 
@@ -120,8 +121,13 @@
 }
 
 .font-display {
-  font-family: 'Georgia', serif;
-  font-style: italic;
+  font-family: "Posterama Semibold", "Posterama", "Outfit", sans-serif;
+}
+
+.font-posterama-regular {
+  font-family: var(--font-posterama-regular);
+  font-weight: 300;
+  font-style: normal;
 }
 
 .arabic {

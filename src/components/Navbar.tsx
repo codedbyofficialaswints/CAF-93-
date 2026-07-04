@@ -55,8 +55,8 @@ export default function Navbar({
             className="flex flex-col items-start cursor-pointer group"
           >
             <div className="flex items-baseline gap-1">
-              <span className="font-serif text-2xl font-bold tracking-tight text-white group-hover:text-gold transition-luxury">
-                CAFÉ 93<sup className="text-sm font-medium">°</sup>
+              <span className="font-display text-2xl font-semibold tracking-wider text-white group-hover:text-gold transition-luxury">
+                CΛFÉ 93°
               </span>
               <span className="text-gold font-arabic-display text-sm font-bold tracking-widest opacity-90">
                 كافيه ٩٣°

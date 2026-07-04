@@ -133,16 +133,16 @@ export default function GiftingPage({ currentLang, onAddToCart }: GiftingPagePro
   const currentDesign = cardDesigns[cardConfig.design];
 
   return (
-    <div className="py-24 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
+    <div className="pt-28 pb-20 bg-gradient-to-b from-[#7A1F1F] to-[#4A1010] bg-grain min-h-screen relative overflow-hidden">
       <div className="bg-pattern" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-gold font-display text-lg tracking-widest block mb-2 italic">
+          <span className="text-gold font-posterama-regular text-lg tracking-widest block mb-2">
             {currentLang === 'en' ? "PREMIUM SHARING" : "الإهداء والتقدير"}
           </span>
-          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display italic'}`}>
+          <h1 className={`text-4xl sm:text-6xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
             {t('giftingTitle')}
           </h1>
           <p className="text-cream/80 text-sm sm:text-base">
@@ -327,11 +327,11 @@ export default function GiftingPage({ currentLang, onAddToCart }: GiftingPagePro
               {/* Greeting & Message Content */}
               <div className="relative z-10 py-2 space-y-1 text-center min-h-[60px] flex flex-col justify-center">
                 {cardConfig.message ? (
-                  <p className={`text-xs italic leading-relaxed font-serif max-h-[50px] overflow-hidden ${cardConfig.design === 'golden' ? 'text-[#1A1210]' : 'text-cream'}`}>
+                  <p className={`text-xs leading-relaxed font-posterama-regular max-h-[50px] overflow-hidden ${cardConfig.design === 'golden' ? 'text-[#1A1210]' : 'text-cream'}`}>
                     "{cardConfig.message}"
                   </p>
                 ) : (
-                  <p className="text-[10px] text-cream/40 font-mono italic">
+                  <p className="text-[10px] text-cream/40 font-mono">
                     {currentLang === 'en' ? "(Your custom message will display here)" : "(رسالتك الخاصة ستظهر في هذا المكان)"}
                   </p>
                 )}

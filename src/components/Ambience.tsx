@@ -91,10 +91,10 @@ export default function Ambience({ currentLang }: AmbienceProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-gold font-display text-lg tracking-widest block mb-2 italic">
+          <span className="text-gold font-posterama-regular text-lg tracking-widest block mb-2">
             {currentLang === 'en' ? "THE RITUAL SANCTUARY" : "بيئة مخصصة للتركيز"}
           </span>
-          <h2 className={`text-3xl sm:text-5xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display italic'}`}>
+          <h2 className={`text-3xl sm:text-5xl font-normal text-white mb-4 ${currentLang === 'ar' ? 'arabic' : 'font-display'}`}>
             {t('titleScience')}
           </h2>
           <p className="text-cream/80 text-base sm:text-lg">
